@@ -11,6 +11,7 @@
 # Technology used
 
 - HTML
+
 - CSS
 - JavaScript
 - VS code
@@ -19,7 +20,7 @@
 # Here you can see overview of my portfolio
 
 <h2 align="center">
-  <img sec="(https://github.com/Prashantomm/Prashantomm.github.io/assets/112774297/cc676fe2-7cf6-4793-9035-97f82606c965)
+  <img sec="https://github.com/Prashantomm/Prashantomm.github.io/assets/112774297/cc676fe2-7cf6-4793-9035-97f82606c965
 " width="600px"/>
 </h2>
 
