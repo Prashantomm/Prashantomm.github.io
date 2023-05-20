@@ -6,3 +6,12 @@
 - User can connect via Email
 - User can view my Github contributions
 - User can review my projects through live link and source code
+
+
+# Technology used
+
+- HTML
+- CSS
+- JavaScript
+- VS code
+- Git & Github
