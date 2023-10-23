@@ -360,22 +360,23 @@ section .title::after {
 }
 
 
+
 /*  ------------------------ projects section styling ------------------*/
 .teams {
   color: #fff;
-  background: #111;
+  background: #777575;
 }
 
 .projects {
   color: #fff;
-  background: #111;
+  background: #f4f2f2;
   display: grid;
   grid-template-columns: repeat(auto);
 }
 
 .projects .title::before,
 .teams .title::before {
-  background: #fff;
+  background: #0b0b0b;
 }
 
 .projects .title::after,
@@ -565,7 +566,7 @@ section .title::after {
 .skills-content .right .mysql::before {
   width: 90%;
 } */ 
-.skills {
+/* .skills {
   padding: 50px 0;
   background-color: #f9f9f9;
 }
@@ -611,8 +612,96 @@ section .title::after {
 .skills-card-name {
   font-size: 18px;
   margin-bottom: 20px;
+} */
+/* CSS for Skills Cards */
+
+/* CSS for Skills Cards */
+.skills-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
+/* Keyframes for moving animation */
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.skills-card:hover {
+  animation: moveUpAndDown 1s ease infinite; /* Apply the animation on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #007bff;
+}
+
+.skills-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.skills-card:hover::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.skills-card-img {
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-card:hover .skills-card-img {
+  transform: scale(1.1);
+}
+
+.skills-card-name {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.skills-card:hover .skills-card-name {
+  color: #007bff;
+}
+
+/* CSS for the Skills Section */
+.skills {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.title:hover {
+  color: #007bff;
+}
 
 
 
